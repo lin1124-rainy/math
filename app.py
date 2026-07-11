@@ -47,9 +47,9 @@ for q_id, q_info in questions.items():
                 is_correct = simplify(parsed_standard - parsed_student) == 0
 
                 if is_correct:
-                    st.success("🎉 AC (Correct Answer)! 答對了！")
+                    st.success("🎉 AC")
                 else:
-                    st.error("❌ WA (Wrong Answer)... 再試試看！")
+                    st.error("❌ WA")
 
             except Exception as e:
                 # 如果真的出錯，順便把錯誤印出來方便排錯
